@@ -1,0 +1,29 @@
+* {
+    outline: 1px solid magenta;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+
+    display: inline-grid;
+    grid-template: repeat(8, 1fr) / repeat(5, 1fr);
+}
+
+#sidebar{
+    grid-area: 1 / 1 / 9 / 2;
+
+    display: inline-grid;
+}
+
+#header {
+    grid-area: 1 / 2 / 2 / 6;
+}
+
+#main-content {
+    grid-area: 2 / 2 / 9 / 6;
+}
