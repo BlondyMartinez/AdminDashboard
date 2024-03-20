@@ -7,26 +7,34 @@
     <link rel="stylesheet" href="./src/style.css">
     
     <script src="https://kit.fontawesome.com/a20bb7d309.js" crossorigin="anonymous" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
         <div id="sidebar">
-            <h2 id="sidebar-header"><i class="fa-solid fa-table-cells"></i> Dashboard</h2>
+            <h2 id="sidebar-header"><span class="mdi mdi-view-dashboard"></span> Dashboard</h2>
             <div class="group-1">
-                <a class="item"><h3><i class="fa-solid fa-house"></i> Home</h3></a>
-                <a class="item"><h3><i class="fa-regular fa-address-card"></i> Profile</a>
-                <a class="item"><h3><i class="fa-solid fa-message"></i> Messages</h3></a>
-                <a class="item"><h3><i class="fa-solid fa-clock-rotate-left"></i> History</h3></a>
-                <a class="item"><h3><i class="fa-solid fa-list-check"></i> Tasks</h3></a>
-                <a class="item"><h3><i class="fa-solid fa-user-group"></i> Communities</h3></a>
+                <a><h3><i class="fa-solid fa-house"></i> Home</h3></a>
+                <a><h3><i class="fa-regular fa-address-card"></i> Profile</h3></a>
+                <a><h3><i class="fa-solid fa-message"></i> Messages</h3></a>
+                <a><h3><i class="fa-solid fa-clock-rotate-left"></i> History</h3></a>
+                <a><h3><i class="fa-solid fa-list-check"></i> Tasks</h3></a>
+                <a><h3><i class="fa-solid fa-user-group"></i> Communities</h3></a>
             </div>
             <div class="group-2">
-                <a class="item"><h3><i class="fa-solid fa-gear"></i> Settings</h3></a>
-                <a class="item"><h3><i class="fa-solid fa-circle-question"></i> Support</h3></a>
-                <a class="item"><h3><i class="fa-solid fa-shield-halved"></i> Privacy</h3></a>
+                <a><h3><i class="fa-solid fa-gear"></i> Settings</h3></a>
+                <a><h3><i class="fa-solid fa-circle-question"></i> Support</h3></a>
+                <a><h3><i class="fa-solid fa-shield-halved"></i> Privacy</h3></a>
             </div>
+            <div class="footer">Made with ❤️ by Blondy Martínez<br>
+                <a href="https://github.com/BlondyMartinez/AdminDashboard"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/blondy-martinez/"><i class="fa-brands fa-linkedin"></i></a>
+            </i></div>
         </div>
         <div id="header">
             <div class="profile-top-left items-left">
@@ -34,7 +42,7 @@
                 <input class="search-bar" id="search-bar" type="text">
             </div>
             <div class="profile-top-right items-right">
-                <a><i class="fa-regular fa-bell"></i></a>
+                <a><span class="mdi mdi-bell-badge-outline notification"></span></a>
                 <img src="./images/woman.png" alt="">
                 <h4>Blondy Martínez</h4>
             </div>
