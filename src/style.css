@@ -42,12 +42,17 @@ body {
     grid-area: 2 / 1 / 2 / 3;
 }
 
+.user-greeting {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
 .profile-bottom-right {
     grid-area: 2 / 3 / 2 / 5;
 }
 
-.profile-bottom-right, 
-.profile-top-right{
+.header-items{
     display: flex;
     justify-content: space-around;
     align-items: center;
