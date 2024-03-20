@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Roboto;
 }
 
 img {
@@ -20,10 +20,12 @@ button {
     padding: 10px 30px;
     border: none;
     border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color:  #82d3ff;
+    transform: scale(1.1);
 }
 
 .container{
@@ -39,7 +41,7 @@ button:hover {
 #sidebar{
     grid-area: 1 / 1 / 9 / 2;
 
-    padding: 20px;
+    padding: 0 20px;
     background-color: #1992d4;
     color: white;
 
@@ -48,16 +50,34 @@ button:hover {
     gap: 20px;
 }
 
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 3px;
+}
+
+#sidebar a:hover {
+    color: rgb(255, 255, 210);
+}
+
 /* HEADER */
 
 #header {
-    outline: 1px solid rgb(0, 107, 0);
     grid-area: 1 / 2 / 2 / 6;
 
-    padding: 1% 60px;
+    padding: 0 60px 10px 60px;
 
     display: inline-grid;
     grid-template: 1fr 1fr / repeat(4, 1fr);
+
+    box-shadow: 1px 1px 1px gray;
 }
 
 .items-left {
@@ -71,11 +91,20 @@ button:hover {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 60px
+    gap: 20px;
 }
 
 .profile-top-left{
     grid-area: 1 / 1 / 2 / 4;
+}
+
+.profile-bottom-left {
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+.profile-bottom-right {
+    grid-area: 2 / 3 / 2 / 5;
+    gap: 60px
 }
 
 .search-bar {
@@ -86,8 +115,13 @@ button:hover {
     border-radius: 20px;
 }
 
-.profile-bottom-left {
-    grid-area: 2 / 1 / 2 / 3;
+.notification {
+    font-size: 2rem;
+    transition: all 1s ease;
+}
+
+#header a:hover {
+    transform: scale(1.2);
 }
 
 .user-greeting {
@@ -97,10 +131,6 @@ button:hover {
 .user-greeting * {
     line-height: 0%;
     margin: 3% 0;
-}
-
-.profile-bottom-right {
-    grid-area: 2 / 3 / 2 / 5;
 }
 
 /* MAIN CONTENT */
