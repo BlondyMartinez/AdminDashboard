@@ -15,9 +15,12 @@ body {
 
 #sidebar{
     grid-area: 1 / 1 / 9 / 2;
-
-    display: inline-grid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
 #sidebar * {
     outline: 1px solid red;
 }
@@ -30,6 +33,7 @@ body {
     display: inline-grid;
     grid-template: 1fr 1fr / repeat(4, 1fr);
 }
+
 #header * {
     outline: 1px solid rgb(0, 107, 0);
 }
