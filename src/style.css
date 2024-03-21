@@ -77,7 +77,8 @@ button:hover {
     display: inline-grid;
     grid-template: 1fr 1fr / repeat(4, 1fr);
 
-    box-shadow: 1px 1px 1px gray;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 .items-left {
@@ -139,6 +140,7 @@ button:hover {
     background-color: #e2e8f0;
     display: inline-grid;
     grid-template: 1fr 1fr / repeat(4, 1fr);
+    overflow: auto;
 }
 
 #projects {
@@ -152,9 +154,13 @@ button:hover {
 
 #project-list {
     display: grid;
-    grid-template:  repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template:  repeat(3, 1fr) / repeat(2, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
+}
+
+#project-list .card {
+    border-left: 0.5rem solid #f0b429;
 }
 
 .announcements-and-trending-wrapper {
@@ -175,4 +181,6 @@ button:hover {
 .card {
     background-color: white;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    padding: 10px;
 }
